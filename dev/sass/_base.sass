@@ -1,0 +1,94 @@
+@import '_variables'
+
+body
+  background-color: $main_color
+  padding: 10px
+  min-height: 100vh
+
+*,input::-webkit-input-placeholder
+  color: white
+
+input::-webkit-clear-button,input::-webkit-inner-spin-button
+  display: none
+
+y-component
+  display: block
+  width: 3.4*$w
+  margin: 0 auto
+  @media #{$all_1370}
+    width: 2.3*$w
+  @media #{$all_920}
+    width: 1.2*$w
+
+.size-button
+  padding: .9em 1.5em
+
+.button
+  cursor: pointer
+  height: 45px
+  background: none
+  display: inline-block
+  border-radius: $items-m/2
+  text-decoration: none
+  user-select: none
+  margin-bottom: $items-m
+  padding: $items-m/2 $items-m
+  outline: none
+  border: $border
+  option
+    color: black
+
+.pagination li
+  display: inline-block
+
+.pagination
+  .active a
+    background-color: #282828
+  a
+    color: white
+    border: $border
+    padding: $items-m
+    border-radius: $items-m/2
+    margin: 1px
+
+
+.b-newsHolder
+  display: inline-block
+  vertical-align: top
+  padding: $items-m
+  margin: $items-m
+  border: $border
+  border-radius: $items-m/2
+
+.b-fotoHolder_tile_list
+  width: 3*$w + 3*2*2*$items-m
+  @media #{$all_1370}
+    width: 2*$w + 3*2*$items-m
+  @media #{$all_920}
+    width: $w + 4*$items-m
+
+.b-fotoHolder_tile
+  width: $w +  2*15px
+
+.b-fotoHolder_thumb
+  width: $w + 2*$items-m
+
+.b-fotoHolder_text
+  float: right
+  max-width: $w
+  font-size: 1.2rem
+  color: white
+
+
+
+
+
+
+
+
+
+
+
+
+
+

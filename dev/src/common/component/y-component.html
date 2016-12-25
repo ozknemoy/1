@@ -1,0 +1,33 @@
+<button class="button" ng-click="y.listClass=!y.listClass">
+    Отобразить {{y.listClass?'карточками':'списком'}}
+</button>
+<button class="button" ng-click="y.search()">
+    Искать
+</button>
+<input type="date" ng-model="y.date" class="button">
+<input type="text" placeholder="что ищем?" ng-model="y.q" class="button">
+<select class="button size-button"
+        ng-options="o.id as o.name for o in y.sizes"
+        ng-model="y.size">
+</select>
+
+
+<br>
+<article ng-repeat="f in y.f.items" class="b-newsHolder"
+         ng-class="y.listClass?'b-fotoHolder_tile_list':'b-fotoHolder_tile'">
+    <a class="" ng-href="{{::f.link}}">
+        <span class="b-fotoHolder_text">{{::f.title}}</span>
+        <img class="b-fotoHolder_thumb" ng-src="{{::f.link}}" alt="">
+    </a>
+</article>
+<br><br>
+
+<div uib-pagination
+     max-size="15"
+     force-ellipses="true"
+     total-items="y.totalItems"
+     ng-model="y.currentPage"
+     ng-change="y.search()"></div>
+
+
+

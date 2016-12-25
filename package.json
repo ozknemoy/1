@@ -1,0 +1,22 @@
+{
+  "name": "test",
+  "private": true,
+  "version": "0.0.0",
+  "description": "frontend setup, AngularJS, gulp",
+  "repository": "https://github.com",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-watch": "^4.3.6",
+    "gulp-webserver": "^0.9.1"
+  },
+  "scripts": {},
+  "dependencies": {
+    "angular": "1.5.8"
+  }
+}
